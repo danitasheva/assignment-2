@@ -16,6 +16,7 @@ li {
 }
 a {
     text-decoration: none;
+    color: black;
 }
 .primary-button {
     background: white;
@@ -25,19 +26,18 @@ a {
     color: black;
     font-weight: 700;    
     margin-right: 10px;
-    text-align: center;
-    
+    text-align: center;     
 }
 
-.primary-button a:hover {
+.primary-button:hover {
     text-decoration: none;
     color: black;
     background: black;
 }
-
 .secondary-button a:hover {
     text-decoration: none;
     color: black;
+
 }
 .secondary-button {    
     padding: 10px 15px;
@@ -115,6 +115,31 @@ nav a:hover {
     color: white;
     background: rgba(255, 255, 255, 0.2);
     border-radius: 5px;
+}
+.menu-button {
+    display: none;
+}
+.menu-button img {
+    width: 20px;
+}
+.menu-button svg {
+    height: 20px;
+    width: 20px;
+}
+.menu-button:hover {
+    cursor: pointer;
+}
+
+
+
+
+@media (max-width: 600px) {
+    .menu-button {
+        display: block;
+    }
+    .desktop-links {
+        display: none;
+    }
 }
 .waves-1 {
     /* background: red; */
@@ -195,6 +220,7 @@ footer a {
 }
 footer .primary-button {
     width: 100%;
+    height: 50px;
 }
 .subscribe-container input[type=text] {
     padding: 10px;
@@ -202,12 +228,17 @@ footer .primary-button {
     border: 2px solid #17c1a0;
     font-size: 15px;
     width: 100%;
+    height: 50px;
     margin-bottom: 10px;
 }
 .footer-container {
     display: flex;
     justify-content: space-between;
-    padding: 10px 0;    
+    padding: 10px 0; 
+    margin: 0;   
+}
+.footer-container ul {
+    padding: 0;
 }
 footer hr {
     border: 0;
@@ -215,4 +246,25 @@ footer hr {
     margin-top: 3px;
 }
 
+@media (max-width: 600px) {
+    .footer-container {
+        flex-direction: column;  
+        margin: 0 auto;    
+        align-items: center;  
+    }
+    .footer-container li {
+        text-align: center;
+    }
+    .footer-container ul {
+        padding: 10px;
+    }
+    .subscribe-container {
+        padding-bottom: 15px;
+    }
+    footer .logo {
+        margin: 20px;
+    } 
+    footer h6 {
 
+    }
+}
