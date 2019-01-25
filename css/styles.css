@@ -2,7 +2,7 @@
 General section
 *****************************/
 h1, p, a {
-    font-family: "Roboto", sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 h1,  {
     font-weight: 700;
@@ -21,11 +21,12 @@ a {
     background: white;
     padding: 10px 15px;
     border-radius: 5px;
-    border: 2px solid white;
+    border: 2px solid #17c1a0;
     color: black;
     font-weight: 700;    
     margin-right: 10px;
-    /* letter-spacing: 1px; */
+    text-align: center;
+    
 }
 
 .primary-button a:hover {
@@ -61,11 +62,11 @@ Hero section
     width: 50px;
     height: 50px;
     border-radius: 25px;
-    background: coral;    
+    background: white;    
 }
 .hero {
     height: 90vh;
-    background: rgb(66, 66, 66);
+    background-image: radial-gradient(at bottom left, #160a4f 0%, #490d4f 100%);
     margin-top: 0;   
     margin-bottom: 50px;
     display: flex;
@@ -104,15 +105,23 @@ nav ul {
 }
 nav a {
     text-decoration: none;
+    color: #17c1a0;
+    text-transform: uppercase;
+    font-weight: 300;
+    padding: 10px 20px;
+}
+nav a:hover {
+    text-decoration: none;
     color: white;
-    /* text-transform: uppercase; */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
 }
 .waves-1 {
     /* background: red; */
-
+    opacity: 1;
     position: absolute;
-    left: 0;
-    bottom: 0;
+    left: -500px;
+    bottom: -20px;
     margin: 0;
     padding: 0;
     /* display: none; */
@@ -121,22 +130,22 @@ nav a {
     /* background: red; */
    
     position: absolute;
-    left: -200px;
-    bottom: 0;
+    left: -300px;
+    bottom: 50px;
     margin: 0;
     padding: 0;
-    opacity: 0.5;
+    opacity: 0.1;
     /* display: none; */
 }
 .waves-3 {
     /* background: red; */
    
     position: absolute;
-    left: -500px;
-    bottom: 0;
+    left: -800px;
+    bottom: 10px;
     margin: 0;
     padding: 0;
-    opacity: 0.5;
+    opacity: 0.3;
     /* display: none; */
 }
 
@@ -159,7 +168,7 @@ main {
     width: 250px;
     height: 300px;
     margin: 20px 20px;
-    background: yellowgreen;
+    background: #17c1a0;
     padding: 30px;
 }
 
@@ -168,25 +177,42 @@ Footer section
 *****************************/
 
 footer {
-    background: gray;
+    background:  #00035e;
+    color: white;
     /* height: 400px;  */
     padding: 50px 0;
+    border-top: 5px solid #17c1a0;
+}
+footer li {
+    line-height: 2;
 }
 footer a {
-    color: black;
+    color: white;
 }
 .subscribe-container {
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;      
 }
-.footer-container{
+footer .primary-button {
+    width: 100%;
+}
+.subscribe-container input[type=text] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #17c1a0;
+    font-size: 15px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.footer-container {
     display: flex;
     justify-content: space-between;
     padding: 10px 0;    
 }
-.footer-container ul {
-    border-right: 2px solid white;    
+footer hr {
+    border: 0;
+    border-top: 1px solid #17c1a0;
+    margin-top: 3px;
 }
-.footer-container li {
-    padding-right: 30px;
-}
+
+
